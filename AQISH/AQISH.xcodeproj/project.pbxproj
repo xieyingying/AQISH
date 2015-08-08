@@ -9,22 +9,11 @@
 /* Begin PBXBuildFile section */
 		2D0F96BA1B7625FE004D08E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96B91B7625FE004D08E2 /* main.m */; };
 		2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */; };
-		2D0F96C01B7625FE004D08E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96BF1B7625FE004D08E2 /* ViewController.m */; };
-		2D0F96C31B7625FE004D08E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F96C11B7625FE004D08E2 /* Main.storyboard */; };
 		2D0F96C51B7625FE004D08E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F96C41B7625FE004D08E2 /* Images.xcassets */; };
 		2D0F96C81B7625FE004D08E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */; };
-		2D0F96D41B7625FE004D08E2 /* AQISHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96D31B7625FE004D08E2 /* AQISHTests.m */; };
+		2D0F96E41B762F01004D08E2 /* AQIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96E31B762F01004D08E2 /* AQIBaseViewController.m */; };
+		2D0F96E71B762FCE004D08E2 /* AQIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2D0F96CE1B7625FE004D08E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2D0F96AC1B7625FE004D08E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D0F96B31B7625FE004D08E2;
-			remoteInfo = AQISH;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2D0F96B41B7625FE004D08E2 /* AQISH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQISH.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,25 +21,16 @@
 		2D0F96B91B7625FE004D08E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D0F96BB1B7625FE004D08E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2D0F96BE1B7625FE004D08E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2D0F96BF1B7625FE004D08E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2D0F96C21B7625FE004D08E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0F96C41B7625FE004D08E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D0F96C71B7625FE004D08E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2D0F96CD1B7625FE004D08E2 /* AQISHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQISHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D0F96D21B7625FE004D08E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0F96D31B7625FE004D08E2 /* AQISHTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQISHTests.m; sourceTree = "<group>"; };
+		2D0F96E21B762F01004D08E2 /* AQIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIBaseViewController.h; path = ViewControllers/Base/AQIBaseViewController.h; sourceTree = "<group>"; };
+		2D0F96E31B762F01004D08E2 /* AQIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIBaseViewController.m; path = ViewControllers/Base/AQIBaseViewController.m; sourceTree = "<group>"; };
+		2D0F96E51B762FCE004D08E2 /* AQIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQIMainViewController.h; sourceTree = "<group>"; };
+		2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQIMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D0F96B11B7625FE004D08E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D0F96CA1B7625FE004D08E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				2D0F96B61B7625FE004D08E2 /* AQISH */,
-				2D0F96D01B7625FE004D08E2 /* AQISHTests */,
 				2D0F96B51B7625FE004D08E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				2D0F96B41B7625FE004D08E2 /* AQISH.app */,
-				2D0F96CD1B7625FE004D08E2 /* AQISHTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +59,12 @@
 		2D0F96B61B7625FE004D08E2 /* AQISH */ = {
 			isa = PBXGroup;
 			children = (
+				2D0F96E01B762DDE004D08E2 /* ViewControllers */,
+				2D0F96DF1B762DD1004D08E2 /* Network */,
+				2D0F96DE1B762DC0004D08E2 /* Vender */,
+				2D0F96DD1B762DB5004D08E2 /* HTML */,
 				2D0F96BB1B7625FE004D08E2 /* AppDelegate.h */,
 				2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */,
-				2D0F96BE1B7625FE004D08E2 /* ViewController.h */,
-				2D0F96BF1B7625FE004D08E2 /* ViewController.m */,
-				2D0F96C11B7625FE004D08E2 /* Main.storyboard */,
 				2D0F96C41B7625FE004D08E2 /* Images.xcassets */,
 				2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */,
 				2D0F96B71B7625FE004D08E2 /* Supporting Files */,
@@ -102,21 +81,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2D0F96D01B7625FE004D08E2 /* AQISHTests */ = {
+		2D0F96DD1B762DB5004D08E2 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
-				2D0F96D31B7625FE004D08E2 /* AQISHTests.m */,
-				2D0F96D11B7625FE004D08E2 /* Supporting Files */,
 			);
-			path = AQISHTests;
+			name = HTML;
 			sourceTree = "<group>";
 		};
-		2D0F96D11B7625FE004D08E2 /* Supporting Files */ = {
+		2D0F96DE1B762DC0004D08E2 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				2D0F96D21B7625FE004D08E2 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		2D0F96DF1B762DD1004D08E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		2D0F96E01B762DDE004D08E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F96E11B762EDF004D08E2 /* Base */,
+				2D0F96E51B762FCE004D08E2 /* AQIMainViewController.h */,
+				2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2D0F96E11B762EDF004D08E2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F96E21B762F01004D08E2 /* AQIBaseViewController.h */,
+				2D0F96E31B762F01004D08E2 /* AQIBaseViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +141,6 @@
 			productReference = 2D0F96B41B7625FE004D08E2 /* AQISH.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D0F96CC1B7625FE004D08E2 /* AQISHTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D0F96DA1B7625FE004D08E2 /* Build configuration list for PBXNativeTarget "AQISHTests" */;
-			buildPhases = (
-				2D0F96C91B7625FE004D08E2 /* Sources */,
-				2D0F96CA1B7625FE004D08E2 /* Frameworks */,
-				2D0F96CB1B7625FE004D08E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D0F96CF1B7625FE004D08E2 /* PBXTargetDependency */,
-			);
-			name = AQISHTests;
-			productName = AQISHTests;
-			productReference = 2D0F96CD1B7625FE004D08E2 /* AQISHTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +152,6 @@
 				TargetAttributes = {
 					2D0F96B31B7625FE004D08E2 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					2D0F96CC1B7625FE004D08E2 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 2D0F96B31B7625FE004D08E2;
 					};
 				};
 			};
@@ -189,7 +169,6 @@
 			projectRoot = "";
 			targets = (
 				2D0F96B31B7625FE004D08E2 /* AQISH */,
-				2D0F96CC1B7625FE004D08E2 /* AQISHTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F96C31B7625FE004D08E2 /* Main.storyboard in Resources */,
 				2D0F96C81B7625FE004D08E2 /* LaunchScreen.xib in Resources */,
 				2D0F96C51B7625FE004D08E2 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D0F96CB1B7625FE004D08E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,39 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F96C01B7625FE004D08E2 /* ViewController.m in Sources */,
 				2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */,
 				2D0F96BA1B7625FE004D08E2 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D0F96C91B7625FE004D08E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D0F96D41B7625FE004D08E2 /* AQISHTests.m in Sources */,
+				2D0F96E41B762F01004D08E2 /* AQIBaseViewController.m in Sources */,
+				2D0F96E71B762FCE004D08E2 /* AQIMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2D0F96CF1B7625FE004D08E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D0F96B31B7625FE004D08E2 /* AQISH */;
-			targetProxy = 2D0F96CE1B7625FE004D08E2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		2D0F96C11B7625FE004D08E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0F96C21B7625FE004D08E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,40 +313,6 @@
 			};
 			name = Release;
 		};
-		2D0F96DB1B7625FE004D08E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AQISHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AQISH.app/AQISH";
-			};
-			name = Debug;
-		};
-		2D0F96DC1B7625FE004D08E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AQISHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AQISH.app/AQISH";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,14 +330,6 @@
 			buildConfigurations = (
 				2D0F96D81B7625FE004D08E2 /* Debug */,
 				2D0F96D91B7625FE004D08E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		2D0F96DA1B7625FE004D08E2 /* Build configuration list for PBXNativeTarget "AQISHTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D0F96DB1B7625FE004D08E2 /* Debug */,
-				2D0F96DC1B7625FE004D08E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

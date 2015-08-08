@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AQIBaseViewController.h
 //  AQISH
 //
 //  Created by xiebohui on 8/8/15.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AQIBaseViewController : UIViewController
 
+// 初始化
+- (void)commonInit;
 
 @end
-
