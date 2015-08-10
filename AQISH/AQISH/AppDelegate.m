@@ -8,8 +8,12 @@
 
 #import "AppDelegate.h"
 #import "AQIMainViewController.h"
+#import "MMDrawerController.h"
+#import "AQIMenuViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UINavigationController *mainViewController;
 
 @end
 
@@ -18,8 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    AQIMainViewController *mainViewController = [AQIMainViewController new];
-    self.window.rootViewController = mainViewController;
+    self.mainViewController = [[UINavigationController alloc] initWithRootViewController:[AQIMainViewController new]];
+    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:self.mainViewController leftDrawerViewController:[AQIMenuViewController new]];
+    self.window.rootViewController = drawerController;
     [self.window makeKeyAndVisible];
     return YES;
 }

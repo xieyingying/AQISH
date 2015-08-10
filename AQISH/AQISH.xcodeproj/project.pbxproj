@@ -17,6 +17,7 @@
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
 		2DB1004C1B783CA50028175C /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100481B783CA50028175C /* UIViewController+MMDrawerController.m */; };
+		2DB1004F1B783D280028175C /* AQIMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1004E1B783D280028175C /* AQIMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		2DB100461B783CA50028175C /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		2DB100471B783CA50028175C /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		2DB100481B783CA50028175C /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		2DB1004D1B783D280028175C /* AQIMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIMenuViewController.h; path = ViewControllers/AQIMenuViewController.h; sourceTree = "<group>"; };
+		2DB1004E1B783D280028175C /* AQIMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIMenuViewController.m; path = ViewControllers/AQIMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				2D0F96E11B762EDF004D08E2 /* Base */,
 				2D0F96E51B762FCE004D08E2 /* AQIMainViewController.h */,
 				2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */,
+				2DB1004D1B783D280028175C /* AQIMenuViewController.h */,
+				2DB1004E1B783D280028175C /* AQIMenuViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB1004F1B783D280028175C /* AQIMenuViewController.m in Sources */,
 				2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */,
 				2D0F96BA1B7625FE004D08E2 /* main.m in Sources */,
 				2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */,
