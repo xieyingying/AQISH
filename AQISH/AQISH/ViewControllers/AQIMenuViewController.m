@@ -10,6 +10,8 @@
 
 @interface AQIMenuViewController ()
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation AQIMenuViewController
@@ -20,6 +22,7 @@
 
 - (void)commonInit {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 }
 
 @end
