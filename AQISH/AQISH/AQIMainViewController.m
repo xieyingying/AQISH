@@ -11,6 +11,8 @@
 
 @interface AQIMainViewController ()
 
+@property (nonatomic, strong) UIImageView *backgroundView;
+
 @end
 
 @implementation AQIMainViewController
@@ -21,6 +23,14 @@
 
 - (void)commonInit {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background"]];
+    [self.view addSubview:self.backgroundView];
+    [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+    }];
     UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [menuButton setImage:[UIImage imageNamed:@"Icon_Menu"] forState:UIControlStateNormal];
     menuButton.frame = CGRectMake(0, 0, 30, 30);
