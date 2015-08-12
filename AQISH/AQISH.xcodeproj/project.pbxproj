@@ -33,6 +33,7 @@
 		2D5E0C161B7ADF7900518D44 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C0B1B7ADF7900518D44 /* AFURLRequestSerialization.m */; };
 		2D5E0C171B7ADF7900518D44 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C0D1B7ADF7900518D44 /* AFURLResponseSerialization.m */; };
 		2D5E0C181B7ADF7900518D44 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C0F1B7ADF7900518D44 /* AFURLSessionManager.m */; };
+		2D5E0C1C1B7AE0B700518D44 /* AQILocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C1B1B7AE0B700518D44 /* AQILocationManager.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -99,6 +100,8 @@
 		2D5E0C0D1B7ADF7900518D44 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		2D5E0C0E1B7ADF7900518D44 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		2D5E0C0F1B7ADF7900518D44 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		2D5E0C1A1B7AE0B700518D44 /* AQILocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQILocationManager.h; path = Location/AQILocationManager.h; sourceTree = "<group>"; };
+		2D5E0C1B1B7AE0B700518D44 /* AQILocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQILocationManager.m; path = Location/AQILocationManager.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		2D0F96B61B7625FE004D08E2 /* AQISH */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0C191B7AE09E00518D44 /* Location */,
 				2D0F96E01B762DDE004D08E2 /* ViewControllers */,
 				2D0F96DF1B762DD1004D08E2 /* Network */,
 				2D0F96DE1B762DC0004D08E2 /* Vender */,
@@ -272,6 +276,15 @@
 			path = Vender/AFNetworking;
 			sourceTree = "<group>";
 		};
+		2D5E0C191B7AE09E00518D44 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E0C1A1B7AE0B700518D44 /* AQILocationManager.h */,
+				2D5E0C1B1B7AE0B700518D44 /* AQILocationManager.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		2DB1003F1B783CA50028175C /* MMDrawerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +385,7 @@
 				2D5E0BFB1B7ADC2F00518D44 /* AQINetworkManager.m in Sources */,
 				2D5E0BEE1B7993CB00518D44 /* MASCompositeConstraint.m in Sources */,
 				2D5E0BF01B7993CB00518D44 /* MASConstraintMaker.m in Sources */,
+				2D5E0C1C1B7AE0B700518D44 /* AQILocationManager.m in Sources */,
 				2D5E0BF61B7993CB00518D44 /* View+MASAdditions.m in Sources */,
 				2D5E0BF11B7993CB00518D44 /* MASLayoutConstraint.m in Sources */,
 				2D5E0BF71B7993CB00518D44 /* ViewController+MASAdditions.m in Sources */,
