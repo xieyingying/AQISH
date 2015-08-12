@@ -16,8 +16,12 @@
 {
     self = [super init];
     if (self) {
-        _lat = @"-1";
-        _lng = @"-1";
+        if ([AQILocationManager sharedManager].currentLocation) {
+            _lat = [AQILocationManager sharedManager].currentLocation.coordinate.latitude;
+            _lng = [AQILocationManager sharedManager].currentLocation.coordinate.longitude;
+        }
+        _lat = -1;
+        _lng = -1;
         _provider = @"MMShareBLL.DAL.WebAQI.Iphone";
         _method = @"IphoneWarningTable";
         _IMEI = [ASIdentifierManager sharedManager].advertisingIdentifier.UUIDString;

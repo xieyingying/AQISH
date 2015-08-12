@@ -12,8 +12,8 @@
 
 @property (nonatomic, copy) NSString *provider;
 @property (nonatomic, copy) NSString *method;
-@property (nonatomic, copy) NSString *lat;
-@property (nonatomic, copy) NSString *lng;
+@property (nonatomic, assign) CGFloat lat;
+@property (nonatomic, assign) CGFloat lng;
 @property (nonatomic, copy) NSString *IMEI;
 
 @end
