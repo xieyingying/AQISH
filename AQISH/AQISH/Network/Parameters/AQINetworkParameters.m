@@ -20,8 +20,10 @@
             _lat = [AQILocationManager sharedManager].currentLocation.coordinate.latitude;
             _lng = [AQILocationManager sharedManager].currentLocation.coordinate.longitude;
         }
-        _lat = -1;
-        _lng = -1;
+        else {
+            _lat = -1;
+            _lng = -1;
+        }
         _provider = @"MMShareBLL.DAL.WebAQI.Iphone";
         _method = @"IphoneWarningTable";
         _IMEI = [ASIdentifierManager sharedManager].advertisingIdentifier.UUIDString;

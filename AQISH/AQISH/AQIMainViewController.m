@@ -8,6 +8,7 @@
 
 #import "AQIMainViewController.h"
 #import "UIViewController+MMDrawerController.h"
+#import "AQINetworkManager.h"
 
 @interface AQIMainViewController ()
 
@@ -33,6 +34,12 @@
     menuButton.frame = CGRectMake(0, 0, 20, 20);
     [menuButton addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
+    
+    [[[AQINetworkManager sharedManager] requestAlertDataByParameters:[AQIAlertParameters new]] subscribeNext:^(id x) {
+        
+    } error:^(NSError *error) {
+        
+    }];
 }
 
 - (void)showMenu:(id)sender {

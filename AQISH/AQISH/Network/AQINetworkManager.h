@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AQINetworkParameters.h"
 
 @interface AQINetworkManager : NSObject
 
 + (instancetype)sharedManager;
+
+- (RACSignal *)requestAlertDataByParameters:(AQIAlertParameters *)parameters;
 
 @end
