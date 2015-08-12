@@ -8,6 +8,6 @@
 
 #import "AQINetworkParameters.h"
 
-@implementation AQINetworkParameters
+@implementation AQIAlertParameters
 
 @end
