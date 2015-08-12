@@ -50,6 +50,7 @@
 		2D5E0C521B7AE40C00518D44 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C3F1B7AE40C00518D44 /* NSObject+MTLComparisonAdditions.m */; };
 		2D5E0C531B7AE40C00518D44 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C411B7AE40C00518D44 /* NSValueTransformer+MTLInversionAdditions.m */; };
 		2D5E0C541B7AE40C00518D44 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C431B7AE40C00518D44 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		2D5E0C571B7AE64000518D44 /* AQINetworkParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -153,6 +154,8 @@
 		2D5E0C411B7AE40C00518D44 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		2D5E0C421B7AE40C00518D44 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		2D5E0C431B7AE40C00518D44 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		2D5E0C551B7AE64000518D44 /* AQINetworkParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQINetworkParameters.h; path = Network/Parameters/AQINetworkParameters.h; sourceTree = "<group>"; };
+		2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQINetworkParameters.m; path = Network/Parameters/AQINetworkParameters.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 		2D5E0C1D1B7AE36600518D44 /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0C551B7AE64000518D44 /* AQINetworkParameters.h */,
+				2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */,
 			);
 			name = Parameters;
 			sourceTree = "<group>";
@@ -515,6 +520,7 @@
 				2DB1004C1B783CA50028175C /* UIViewController+MMDrawerController.m in Sources */,
 				2D0F96E41B762F01004D08E2 /* AQIBaseViewController.m in Sources */,
 				2D5E0C111B7ADF7900518D44 /* AFHTTPRequestOperationManager.m in Sources */,
+				2D5E0C571B7AE64000518D44 /* AQINetworkParameters.m in Sources */,
 				2D5E0C501B7AE40C00518D44 /* NSDictionary+MTLMappingAdditions.m in Sources */,
 				2D5E0BF41B7993CB00518D44 /* NSArray+MASAdditions.m in Sources */,
 				2D5E0C4E1B7AE40C00518D44 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
