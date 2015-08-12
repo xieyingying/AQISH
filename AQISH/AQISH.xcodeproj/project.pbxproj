@@ -10,7 +10,6 @@
 		2D0F96BA1B7625FE004D08E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96B91B7625FE004D08E2 /* main.m */; };
 		2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */; };
 		2D0F96C51B7625FE004D08E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F96C41B7625FE004D08E2 /* Images.xcassets */; };
-		2D0F96C81B7625FE004D08E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */; };
 		2D0F96E41B762F01004D08E2 /* AQIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96E31B762F01004D08E2 /* AQIBaseViewController.m */; };
 		2D0F96E71B762FCE004D08E2 /* AQIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */; };
 		2D5E0BFB1B7ADC2F00518D44 /* AQINetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0BFA1B7ADC2F00518D44 /* AQINetworkManager.m */; };
@@ -31,7 +30,6 @@
 		2D0F96BB1B7625FE004D08E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D0F96C41B7625FE004D08E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2D0F96C71B7625FE004D08E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2D0F96E21B762F01004D08E2 /* AQIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIBaseViewController.h; path = ViewControllers/Base/AQIBaseViewController.h; sourceTree = "<group>"; };
 		2D0F96E31B762F01004D08E2 /* AQIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIBaseViewController.m; path = ViewControllers/Base/AQIBaseViewController.m; sourceTree = "<group>"; };
 		2D0F96E51B762FCE004D08E2 /* AQIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQIMainViewController.h; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				2D0F96BB1B7625FE004D08E2 /* AppDelegate.h */,
 				2D0F96BC1B7625FE004D08E2 /* AppDelegate.m */,
 				2D0F96C41B7625FE004D08E2 /* Images.xcassets */,
-				2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */,
 				2D0F96B71B7625FE004D08E2 /* Supporting Files */,
 			);
 			path = AQISH;
@@ -273,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F96C81B7625FE004D08E2 /* LaunchScreen.xib in Resources */,
 				2D0F96C51B7625FE004D08E2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,17 +330,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2D0F96C61B7625FE004D08E2 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0F96C71B7625FE004D08E2 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2D0F96D51B7625FE004D08E2 /* Debug */ = {
