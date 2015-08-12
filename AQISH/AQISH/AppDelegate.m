@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AQILocationManager.h"
 #import "AQIMainViewController.h"
 #import "MMDrawerController.h"
 #import "AQIMenuViewController.h"
@@ -22,6 +23,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [AQILocationManager sharedManager];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.mainViewController = [[UINavigationController alloc] initWithRootViewController:[AQIMainViewController new]];
     self.menuViewController = [[UINavigationController alloc] initWithRootViewController:[AQIMenuViewController new]];
