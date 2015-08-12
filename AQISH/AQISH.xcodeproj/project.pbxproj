@@ -15,6 +15,8 @@
 		2D5E0BFB1B7ADC2F00518D44 /* AQINetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0BFA1B7ADC2F00518D44 /* AQINetworkManager.m */; };
 		2D5E0C1C1B7AE0B700518D44 /* AQILocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C1B1B7AE0B700518D44 /* AQILocationManager.m */; };
 		2D5E0C571B7AE64000518D44 /* AQINetworkParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */; };
+		2D5E0D851B7B1CB000518D44 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D841B7B1CB000518D44 /* AdSupport.framework */; };
+		2D5E0D871B7B1D3800518D44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -41,6 +43,8 @@
 		2D5E0C1B1B7AE0B700518D44 /* AQILocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQILocationManager.m; path = Location/AQILocationManager.m; sourceTree = "<group>"; };
 		2D5E0C551B7AE64000518D44 /* AQINetworkParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQINetworkParameters.h; path = Network/Parameters/AQINetworkParameters.h; sourceTree = "<group>"; };
 		2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQINetworkParameters.m; path = Network/Parameters/AQINetworkParameters.m; sourceTree = "<group>"; };
+		2D5E0D841B7B1CB000518D44 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5E0D871B7B1D3800518D44 /* CoreLocation.framework in Frameworks */,
+				2D5E0D851B7B1CB000518D44 /* AdSupport.framework in Frameworks */,
 				875DD5A465141272FE9472D0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +203,8 @@
 		4837AEE63740331148AC1BD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */,
+				2D5E0D841B7B1CB000518D44 /* AdSupport.framework */,
 				710E92067F0036A631F89115 /* libPods.a */,
 			);
 			name = Frameworks;

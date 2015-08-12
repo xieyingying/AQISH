@@ -8,6 +8,12 @@
 
 #import "AQILocationManager.h"
 
+@interface AQILocationManager() <CLLocationManagerDelegate>
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+
+@end
+
 @implementation AQILocationManager
 
 + (instancetype)sharedManager {
@@ -17,6 +23,27 @@
         sharedManager = [AQILocationManager new];
     });
     return sharedManager;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
+        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0") && [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+            [_locationManager requestWhenInUseAuthorization];
+        }
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        [self.locationManager startUpdatingLocation];
+    }
+    return self;
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    self.currentLocation = [locations lastObject];
 }
 
 @end

@@ -7,7 +7,22 @@
 //
 
 #import "AQINetworkParameters.h"
+#import <AdSupport/AdSupport.h>
+#import "AQILocationManager.h"
 
 @implementation AQIAlertParameters
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _lat = @"-1";
+        _lng = @"-1";
+        _provider = @"MMShareBLL.DAL.WebAQI.Iphone";
+        _method = @"IphoneWarningTable";
+        _IMEI = [ASIdentifierManager sharedManager].advertisingIdentifier.UUIDString;
+    }
+    return self;
+}
 
 @end
