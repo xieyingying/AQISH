@@ -32,3 +32,27 @@
 }
 
 @end
+
+@implementation AQIForecastParameters
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        if ([AQILocationManager sharedManager].currentLocation) {
+            _lat = [AQILocationManager sharedManager].currentLocation.coordinate.latitude;
+            _lng = [AQILocationManager sharedManager].currentLocation.coordinate.longitude;
+        }
+        else {
+            _lat = -1;
+            _lng = -1;
+        }
+        _provider = @"MMShareBLL.DAL.WebAQI.Iphone";
+        _method = @"AndroidForecastData";
+        _groupID = @"102";
+        _IMEI = [ASIdentifierManager sharedManager].advertisingIdentifier.UUIDString;
+    }
+    return self;
+}
+
+@end

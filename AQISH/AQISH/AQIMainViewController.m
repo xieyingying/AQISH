@@ -45,6 +45,12 @@
     } error:^(NSError *error) {
         
     }];
+    
+    [[[AQINetworkManager sharedManager] requestForecastDataByParameters:[AQIForecastParameters new]] subscribeNext:^(id x) {
+        
+    } error:^(NSError *error) {
+        
+    }];
 }
 
 - (void)showMenu:(id)sender {

@@ -14,5 +14,6 @@
 + (instancetype)sharedManager;
 
 - (RACSignal *)requestAlertDataByParameters:(AQIAlertParameters *)parameters;
+- (RACSignal *)requestForecastDataByParameters:(AQIForecastParameters *)parameters;
 
 @end

@@ -56,6 +56,23 @@
     }];
 }
 
+- (RACSignal *)requestForecastDataByParameters:(AQIForecastParameters *)parameters {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSURLSessionDataTask *task = [self.sessionManager GET:@"/semcshare/PatrolHandler.do" parameters:[parameters dictionaryValue] success:^(NSURLSessionDataTask *task, id responseObject) {
+            NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+            NSData *responseData = [self decrypt:responseString];
+            NSString *decryptString = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"null" withString:@""];
+            [subscriber sendNext:decryptString];
+            [subscriber sendCompleted];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            [subscriber sendError:error];
+        }];
+        return [RACDisposable disposableWithBlock:^{
+            [task cancel];
+        }];
+    }];
+}
+
 #pragma mark - Utility
 
 - (NSData *)convertHexString:(NSString *)inputString

@@ -17,3 +17,14 @@
 @property (nonatomic, copy) NSString *IMEI;
 
 @end
+
+@interface AQIForecastParameters : MTLModel
+
+@property (nonatomic, copy) NSString *provider;
+@property (nonatomic, copy) NSString *method;
+@property (nonatomic, assign) CGFloat lat;
+@property (nonatomic, assign) CGFloat lng;
+@property (nonatomic, copy) NSString *IMEI;
+@property (nonatomic, copy) NSString *groupID;
+
+@end
