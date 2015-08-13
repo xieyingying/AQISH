@@ -20,6 +20,8 @@
 		2D5E0D891B7B1EB000518D44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D881B7B1EB000518D44 /* MapKit.framework */; };
 		2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D8E1B7C427000518D44 /* AQIModels.m */; };
 		2D5E0D921B7C5BCC00518D44 /* AQIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */; };
+		2D5E0D951B7C6D7B00518D44 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D931B7C6D7B00518D44 /* About.html */; };
+		2D5E0D961B7C6D7B00518D44 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D941B7C6D7B00518D44 /* AppIcon.png */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -53,6 +55,8 @@
 		2D5E0D8E1B7C427000518D44 /* AQIModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIModels.m; path = Models/AQIModels.m; sourceTree = "<group>"; };
 		2D5E0D901B7C5BCC00518D44 /* AQIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIWebViewController.h; path = ViewControllers/AQIWebViewController.h; sourceTree = "<group>"; };
 		2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIWebViewController.m; path = ViewControllers/AQIWebViewController.m; sourceTree = "<group>"; };
+		2D5E0D931B7C6D7B00518D44 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = About.html; path = HTML/About.html; sourceTree = "<group>"; };
+		2D5E0D941B7C6D7B00518D44 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = HTML/AppIcon.png; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		2D0F96DD1B762DB5004D08E2 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0D931B7C6D7B00518D44 /* About.html */,
+				2D5E0D941B7C6D7B00518D44 /* AppIcon.png */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -305,7 +311,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5E0D951B7C6D7B00518D44 /* About.html in Resources */,
 				2D0F96C51B7625FE004D08E2 /* Images.xcassets in Resources */,
+				2D5E0D961B7C6D7B00518D44 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,6 @@
 
 @interface AQIWebViewController : AQIBaseViewController
 
+@property (nonatomic, copy) NSString *HTML;
+
 @end
