@@ -23,6 +23,9 @@
 		2D5E0D951B7C6D7B00518D44 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D931B7C6D7B00518D44 /* About.html */; };
 		2D5E0D961B7C6D7B00518D44 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D941B7C6D7B00518D44 /* AppIcon.png */; };
 		2D5E0D991B7C715F00518D44 /* AQIViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D981B7C715F00518D44 /* AQIViewControllerManager.m */; };
+		2D5E0D9D1B7CA41900518D44 /* AQIMainSiteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D9C1B7CA41900518D44 /* AQIMainSiteCell.m */; };
+		2D5E0DA01B7CA45900518D44 /* AQIMainForecastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D9F1B7CA45900518D44 /* AQIMainForecastCell.m */; };
+		2D5E0DA31B7CA49800518D44 /* AQIMainNearestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0DA21B7CA49800518D44 /* AQIMainNearestCell.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -60,6 +63,12 @@
 		2D5E0D941B7C6D7B00518D44 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = HTML/AppIcon.png; sourceTree = "<group>"; };
 		2D5E0D971B7C715F00518D44 /* AQIViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIViewControllerManager.h; path = ViewControllers/AQIViewControllerManager.h; sourceTree = "<group>"; };
 		2D5E0D981B7C715F00518D44 /* AQIViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIViewControllerManager.m; path = ViewControllers/AQIViewControllerManager.m; sourceTree = "<group>"; };
+		2D5E0D9B1B7CA41900518D44 /* AQIMainSiteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIMainSiteCell.h; path = ViewControllers/Views/AQIMainSiteCell.h; sourceTree = "<group>"; };
+		2D5E0D9C1B7CA41900518D44 /* AQIMainSiteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIMainSiteCell.m; path = ViewControllers/Views/AQIMainSiteCell.m; sourceTree = "<group>"; };
+		2D5E0D9E1B7CA45900518D44 /* AQIMainForecastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIMainForecastCell.h; path = ViewControllers/Views/AQIMainForecastCell.h; sourceTree = "<group>"; };
+		2D5E0D9F1B7CA45900518D44 /* AQIMainForecastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIMainForecastCell.m; path = ViewControllers/Views/AQIMainForecastCell.m; sourceTree = "<group>"; };
+		2D5E0DA11B7CA49800518D44 /* AQIMainNearestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIMainNearestCell.h; path = ViewControllers/Views/AQIMainNearestCell.h; sourceTree = "<group>"; };
+		2D5E0DA21B7CA49800518D44 /* AQIMainNearestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIMainNearestCell.m; path = ViewControllers/Views/AQIMainNearestCell.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -166,6 +175,7 @@
 		2D0F96E01B762DDE004D08E2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0D9A1B7CA3B400518D44 /* Views */,
 				2D0F96E11B762EDF004D08E2 /* Base */,
 				2D0F96E51B762FCE004D08E2 /* AQIMainViewController.h */,
 				2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */,
@@ -213,6 +223,19 @@
 				2D5E0D8E1B7C427000518D44 /* AQIModels.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2D5E0D9A1B7CA3B400518D44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E0D9B1B7CA41900518D44 /* AQIMainSiteCell.h */,
+				2D5E0D9C1B7CA41900518D44 /* AQIMainSiteCell.m */,
+				2D5E0D9E1B7CA45900518D44 /* AQIMainForecastCell.h */,
+				2D5E0D9F1B7CA45900518D44 /* AQIMainForecastCell.m */,
+				2D5E0DA11B7CA49800518D44 /* AQIMainNearestCell.h */,
+				2D5E0DA21B7CA49800518D44 /* AQIMainNearestCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		2DB1003F1B783CA50028175C /* MMDrawerController */ = {
@@ -363,13 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DB1004F1B783D280028175C /* AQIMenuViewController.m in Sources */,
+				2D5E0D9D1B7CA41900518D44 /* AQIMainSiteCell.m in Sources */,
 				2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */,
 				2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */,
 				2D5E0D921B7C5BCC00518D44 /* AQIWebViewController.m in Sources */,
+				2D5E0DA31B7CA49800518D44 /* AQIMainNearestCell.m in Sources */,
 				2D0F96BA1B7625FE004D08E2 /* main.m in Sources */,
 				2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */,
 				2D5E0BFB1B7ADC2F00518D44 /* AQINetworkManager.m in Sources */,
 				2D5E0C1C1B7AE0B700518D44 /* AQILocationManager.m in Sources */,
+				2D5E0DA01B7CA45900518D44 /* AQIMainForecastCell.m in Sources */,
 				2DB1004C1B783CA50028175C /* UIViewController+MMDrawerController.m in Sources */,
 				2D0F96E41B762F01004D08E2 /* AQIBaseViewController.m in Sources */,
 				2D5E0C571B7AE64000518D44 /* AQINetworkParameters.m in Sources */,

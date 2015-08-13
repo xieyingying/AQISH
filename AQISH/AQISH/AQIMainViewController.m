@@ -9,8 +9,9 @@
 #import "AQIMainViewController.h"
 #import "AQINetworkManager.h"
 
-@interface AQIMainViewController ()
+@interface AQIMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIImageView *backgroundView;
 
 @end
@@ -39,6 +40,17 @@
     shareButton.frame = CGRectMake(0, 0, 20, 20);
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:shareButton];
     
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+    }];
+    
     [[[AQINetworkManager sharedManager] requestAlertDataByParameters:[AQIAlertParameters new]] subscribeNext:^(id x) {
         
     } error:^(NSError *error) {
@@ -64,6 +76,20 @@
     else {
         [self.mm_drawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:NULL];
     }
+}
+
+#pragma mark - UITableViewDataSource && UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
 }
 
 @end
