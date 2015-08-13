@@ -18,6 +18,7 @@
 		2D5E0D851B7B1CB000518D44 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D841B7B1CB000518D44 /* AdSupport.framework */; };
 		2D5E0D871B7B1D3800518D44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */; };
 		2D5E0D891B7B1EB000518D44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D881B7B1EB000518D44 /* MapKit.framework */; };
+		2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D8E1B7C427000518D44 /* AQIModels.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -47,6 +48,8 @@
 		2D5E0D841B7B1CB000518D44 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2D5E0D881B7B1EB000518D44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D5E0D8D1B7C427000518D44 /* AQIModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIModels.h; path = Models/AQIModels.h; sourceTree = "<group>"; };
+		2D5E0D8E1B7C427000518D44 /* AQIModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIModels.m; path = Models/AQIModels.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		2D0F96B61B7625FE004D08E2 /* AQISH */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E0D8C1B7C425200518D44 /* Models */,
 				2D5E0C191B7AE09E00518D44 /* Location */,
 				2D0F96E01B762DDE004D08E2 /* ViewControllers */,
 				2D0F96DF1B762DD1004D08E2 /* Network */,
@@ -184,6 +188,15 @@
 				2D5E0C561B7AE64000518D44 /* AQINetworkParameters.m */,
 			);
 			name = Parameters;
+			sourceTree = "<group>";
+		};
+		2D5E0D8C1B7C425200518D44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D5E0D8D1B7C427000518D44 /* AQIModels.h */,
+				2D5E0D8E1B7C427000518D44 /* AQIModels.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		2DB1003F1B783CA50028175C /* MMDrawerController */ = {
@@ -332,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DB1004F1B783D280028175C /* AQIMenuViewController.m in Sources */,
+				2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */,
 				2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */,
 				2D0F96BA1B7625FE004D08E2 /* main.m in Sources */,
 				2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */,
