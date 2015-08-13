@@ -7,7 +7,7 @@
 //
 
 #import "AQIMenuViewController.h"
-#import "AQIWebViewController.h"
+#import "AQIViewControllerManager.h"
 
 @interface AQIMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -73,7 +73,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 3) {
         [self.mm_drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
-            
+            self.mm_drawerController.centerViewController = [AQIViewControllerManager sharedManager].aboutViewController;
         }];
     }
 }

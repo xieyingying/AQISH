@@ -7,6 +7,7 @@
 //
 
 #import "AQIViewControllerManager.h"
+#import "AQIWebViewController.h"
 
 @implementation AQIViewControllerManager
 
@@ -26,6 +27,16 @@
         
     }
     return self;
+}
+
+- (UINavigationController *)aboutViewController {
+    if (!_aboutViewController) {
+        AQIWebViewController *webViewController = [AQIWebViewController new];
+        webViewController.HTML = @"About";
+        webViewController.title = @"关于";
+        _aboutViewController = [[UINavigationController alloc] initWithRootViewController:webViewController];
+    }
+    return _aboutViewController;
 }
 
 @end

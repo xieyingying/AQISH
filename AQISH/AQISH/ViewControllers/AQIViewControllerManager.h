@@ -10,6 +10,11 @@
 
 @interface AQIViewControllerManager : NSObject
 
+@property (nonatomic, strong) UINavigationController *aboutViewController;
+@property (nonatomic, strong) UINavigationController *mapViewController;
+@property (nonatomic, strong) UINavigationController *standardViewController;
+@property (nonatomic, strong) UINavigationController *mainViewController;
+
 + (instancetype)sharedManager;
 
 @end
