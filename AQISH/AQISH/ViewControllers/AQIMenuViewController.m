@@ -47,16 +47,20 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"AQIMenuCell"];
     }
     switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"管理站点";
+        case 0: {
+            cell.textLabel.text = @"首页";
+        }
             break;
         case 1:
-            cell.textLabel.text = @"标准说明";
+            cell.textLabel.text = @"管理站点";
             break;
         case 2:
-            cell.textLabel.text = @"地图";
+            cell.textLabel.text = @"标准说明";
             break;
         case 3:
+            cell.textLabel.text = @"地图";
+            break;
+        case 4:
             cell.textLabel.text = @"关于";
             break;
         default:
@@ -66,12 +70,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row == 3) {
+    if (indexPath.row == 4) {
         [self.mm_drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
             self.mm_drawerController.centerViewController = [AQIViewControllerManager sharedManager].aboutViewController;
         }];
