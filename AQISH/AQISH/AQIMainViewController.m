@@ -35,6 +35,11 @@
     [menuButton addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
     
+    UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [shareButton setImage:[UIImage imageNamed:@"Icon_Share"] forState:UIControlStateNormal];
+    shareButton.frame = CGRectMake(0, 0, 20, 20);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:shareButton];
+    
     [[[AQINetworkManager sharedManager] requestAlertDataByParameters:[AQIAlertParameters new]] subscribeNext:^(id x) {
         
     } error:^(NSError *error) {
