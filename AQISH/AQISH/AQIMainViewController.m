@@ -51,6 +51,11 @@
     } error:^(NSError *error) {
         
     }];
+    [[[AQINetworkManager sharedManager] requestBasicSiteDataByParameters:[AQIBasicSiteDataParameters new]] subscribeNext:^(id x) {
+        
+    } error:^(NSError *error) {
+        
+    }];
 }
 
 - (void)showMenu:(id)sender {

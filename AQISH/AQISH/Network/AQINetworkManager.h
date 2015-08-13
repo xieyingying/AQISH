@@ -15,5 +15,6 @@
 
 - (RACSignal *)requestAlertDataByParameters:(AQIAlertParameters *)parameters;
 - (RACSignal *)requestForecastDataByParameters:(AQIForecastParameters *)parameters;
+- (RACSignal *)requestBasicSiteDataByParameters:(AQIBasicSiteDataParameters *)parameters;
 
 @end

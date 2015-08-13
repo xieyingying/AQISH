@@ -44,7 +44,7 @@
         NSURLSessionDataTask *task = [self.sessionManager GET:@"/semcshare/PatrolHandler.do" parameters:[parameters dictionaryValue] success:^(NSURLSessionDataTask *task, id responseObject) {
             NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
             NSData *responseData = [self decrypt:responseString];
-            NSString *decryptString = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"null" withString:@""];
+            NSString *decryptString = [[[[[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"NaN" withString:@"0"] stringByReplacingOccurrencesOfString:@"null" withString:@"\"\""] stringByReplacingOccurrencesOfString:@"true" withString:@"1"] stringByReplacingOccurrencesOfString:@"false" withString:@"0"];
             [subscriber sendNext:decryptString];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -61,7 +61,24 @@
         NSURLSessionDataTask *task = [self.sessionManager GET:@"/semcshare/PatrolHandler.do" parameters:[parameters dictionaryValue] success:^(NSURLSessionDataTask *task, id responseObject) {
             NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
             NSData *responseData = [self decrypt:responseString];
-            NSString *decryptString = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"null" withString:@""];
+            NSString *decryptString = [[[[[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"NaN" withString:@"0"] stringByReplacingOccurrencesOfString:@"null" withString:@"\"\""] stringByReplacingOccurrencesOfString:@"true" withString:@"1"] stringByReplacingOccurrencesOfString:@"false" withString:@"0"];
+            [subscriber sendNext:decryptString];
+            [subscriber sendCompleted];
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            [subscriber sendError:error];
+        }];
+        return [RACDisposable disposableWithBlock:^{
+            [task cancel];
+        }];
+    }];
+}
+
+- (RACSignal *)requestBasicSiteDataByParameters:(AQIBasicSiteDataParameters *)parameters {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSURLSessionDataTask *task = [self.sessionManager GET:@"/semcshare/PatrolHandler.do" parameters:[parameters dictionaryValue] success:^(NSURLSessionDataTask *task, id responseObject) {
+            NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+            NSData *responseData = [self decrypt:responseString];
+            NSString *decryptString = [[[[[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"NaN" withString:@"0"] stringByReplacingOccurrencesOfString:@"null" withString:@"\"\""] stringByReplacingOccurrencesOfString:@"true" withString:@"1"] stringByReplacingOccurrencesOfString:@"false" withString:@"0"];
             [subscriber sendNext:decryptString];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
