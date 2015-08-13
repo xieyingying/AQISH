@@ -7,7 +7,6 @@
 //
 
 #import "AQIMainViewController.h"
-#import "UIViewController+MMDrawerController.h"
 #import "AQINetworkManager.h"
 
 @interface AQIMainViewController ()

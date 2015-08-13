@@ -7,6 +7,7 @@
 //
 
 #import "AQIMenuViewController.h"
+#import "AQIWebViewController.h"
 
 @interface AQIMenuViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -56,9 +57,6 @@
             cell.textLabel.text = @"地图";
             break;
         case 3:
-            cell.textLabel.text = @"使用帮助";
-            break;
-        case 4:
             cell.textLabel.text = @"关于";
             break;
         default:
@@ -68,7 +66,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 4;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 3) {
+        [self.mm_drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
 @end

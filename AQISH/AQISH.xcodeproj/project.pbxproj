@@ -22,6 +22,7 @@
 		2D5E0D921B7C5BCC00518D44 /* AQIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */; };
 		2D5E0D951B7C6D7B00518D44 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D931B7C6D7B00518D44 /* About.html */; };
 		2D5E0D961B7C6D7B00518D44 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E0D941B7C6D7B00518D44 /* AppIcon.png */; };
+		2D5E0D991B7C715F00518D44 /* AQIViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D981B7C715F00518D44 /* AQIViewControllerManager.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -57,6 +58,8 @@
 		2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIWebViewController.m; path = ViewControllers/AQIWebViewController.m; sourceTree = "<group>"; };
 		2D5E0D931B7C6D7B00518D44 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = About.html; path = HTML/About.html; sourceTree = "<group>"; };
 		2D5E0D941B7C6D7B00518D44 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = HTML/AppIcon.png; sourceTree = "<group>"; };
+		2D5E0D971B7C715F00518D44 /* AQIViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIViewControllerManager.h; path = ViewControllers/AQIViewControllerManager.h; sourceTree = "<group>"; };
+		2D5E0D981B7C715F00518D44 /* AQIViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIViewControllerManager.m; path = ViewControllers/AQIViewControllerManager.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				2DB1004E1B783D280028175C /* AQIMenuViewController.m */,
 				2D5E0D901B7C5BCC00518D44 /* AQIWebViewController.h */,
 				2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */,
+				2D5E0D971B7C715F00518D44 /* AQIViewControllerManager.h */,
+				2D5E0D981B7C715F00518D44 /* AQIViewControllerManager.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */,
 				2D0F96E71B762FCE004D08E2 /* AQIMainViewController.m in Sources */,
 				2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */,
+				2D5E0D991B7C715F00518D44 /* AQIViewControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
