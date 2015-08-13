@@ -8,6 +8,7 @@
 
 #import "AQINetworkManager.h"
 #import <CommonCrypto/CommonCryptor.h>
+#import "AQIModels.h"
 
 #define kDecryptKey             @"shhjjczx"
 #define kDecryptIV              @"shhjjczx"
@@ -79,7 +80,18 @@
             NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
             NSData *responseData = [self decrypt:responseString];
             NSString *decryptString = [[[[[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"NaN" withString:@"0"] stringByReplacingOccurrencesOfString:@"null" withString:@"\"\""] stringByReplacingOccurrencesOfString:@"true" withString:@"1"] stringByReplacingOccurrencesOfString:@"false" withString:@"0"];
-            [subscriber sendNext:decryptString];
+            if (decryptString.length > 0) {
+                NSError *error;
+                NSArray *siteDatas = [NSJSONSerialization JSONObjectWithData:[decryptString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
+                NSMutableArray *_siteDatas = [NSMutableArray array];
+                for (NSDictionary *siteData in siteDatas) {
+                    [_siteDatas addObject:[AQISiteDataModel modelWithDictionary:siteData error:nil]];
+                }
+                [subscriber sendNext:_siteDatas];
+            }
+            else {
+                [subscriber sendNext:[NSArray array]];
+            }
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
             [subscriber sendError:error];
