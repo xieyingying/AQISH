@@ -19,6 +19,7 @@
 		2D5E0D871B7B1D3800518D44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D861B7B1D3800518D44 /* CoreLocation.framework */; };
 		2D5E0D891B7B1EB000518D44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E0D881B7B1EB000518D44 /* MapKit.framework */; };
 		2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D8E1B7C427000518D44 /* AQIModels.m */; };
+		2D5E0D921B7C5BCC00518D44 /* AQIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */; };
 		2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */; };
 		2DB1004A1B783CA50028175C /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100441B783CA50028175C /* MMDrawerController.m */; };
 		2DB1004B1B783CA50028175C /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB100461B783CA50028175C /* MMDrawerVisualState.m */; };
@@ -50,6 +51,8 @@
 		2D5E0D881B7B1EB000518D44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2D5E0D8D1B7C427000518D44 /* AQIModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIModels.h; path = Models/AQIModels.h; sourceTree = "<group>"; };
 		2D5E0D8E1B7C427000518D44 /* AQIModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIModels.m; path = Models/AQIModels.m; sourceTree = "<group>"; };
+		2D5E0D901B7C5BCC00518D44 /* AQIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQIWebViewController.h; path = ViewControllers/AQIWebViewController.h; sourceTree = "<group>"; };
+		2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQIWebViewController.m; path = ViewControllers/AQIWebViewController.m; sourceTree = "<group>"; };
 		2DB100401B783CA50028175C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		2DB100411B783CA50028175C /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		2DB100421B783CA50028175C /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				2D0F96E61B762FCE004D08E2 /* AQIMainViewController.m */,
 				2DB1004D1B783D280028175C /* AQIMenuViewController.h */,
 				2DB1004E1B783D280028175C /* AQIMenuViewController.m */,
+				2D5E0D901B7C5BCC00518D44 /* AQIWebViewController.h */,
+				2D5E0D911B7C5BCC00518D44 /* AQIWebViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				2DB1004F1B783D280028175C /* AQIMenuViewController.m in Sources */,
 				2D5E0D8F1B7C427000518D44 /* AQIModels.m in Sources */,
 				2D0F96BD1B7625FE004D08E2 /* AppDelegate.m in Sources */,
+				2D5E0D921B7C5BCC00518D44 /* AQIWebViewController.m in Sources */,
 				2D0F96BA1B7625FE004D08E2 /* main.m in Sources */,
 				2DB100491B783CA50028175C /* MMDrawerBarButtonItem.m in Sources */,
 				2D5E0BFB1B7ADC2F00518D44 /* AQINetworkManager.m in Sources */,
